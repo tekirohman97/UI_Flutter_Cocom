@@ -68,7 +68,7 @@ class _Assessment_Page5State extends State<Assessment_Page5> {
             color: kPrimaryColor, borderRadius: BorderRadius.circular(10)),
         child: Center(
           child: Text(
-            'Next',
+            'Submit',
             style: whiteTextBody.copyWith(
               fontSize: 18,
               fontWeight: bold,

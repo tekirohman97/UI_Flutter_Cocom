@@ -1,3 +1,4 @@
+import 'package:app_flutter_cocom/pages/assessment/assesment5_page.dart';
 import 'package:app_flutter_cocom/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
@@ -48,7 +49,10 @@ class _Assessment_Page4State extends State<Assessment_Page4> {
   // ignore: non_constant_identifier_names
   Widget _Button() {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.of(context)
+            .push(MaterialPageRoute(builder: (context) => Assessment_Page5()));
+      },
       onTapDown: (_) => setState(() {
         _margin = 110.0;
       }),
