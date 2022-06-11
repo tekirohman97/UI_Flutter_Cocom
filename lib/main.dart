@@ -1,3 +1,4 @@
+import 'package:app_flutter_cocom/pages/home/home_page.dart';
 import 'package:app_flutter_cocom/pages/login/login.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +12,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // ignore: prefer_const_constructors
     return MaterialApp(
-        debugShowCheckedModeBanner: false, home: const LoginPage());
+        debugShowCheckedModeBanner: false, home: const Home_Page());
   }
 }

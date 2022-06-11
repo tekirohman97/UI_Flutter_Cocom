@@ -33,6 +33,9 @@ TextStyle whiteTextBody = GoogleFonts.openSans(
 TextStyle blackTextBody = GoogleFonts.openSans(
   color: kBlackColor,
 );
+TextStyle blackTextBodyTrans = GoogleFonts.openSans(
+  color: kBlackColor.withOpacity(0.6),
+);
 TextStyle greyTextBody = GoogleFonts.openSans(
   color: kGrey,
 );

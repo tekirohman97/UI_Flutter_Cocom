@@ -14,6 +14,9 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   // ignore: prefer_final_fields
+  final _usernameController = TextEditingController();
+  final _passwordController = TextEditingController();
+
   double _padding = 0.0;
   double _click = 0.0;
   double _click2 = 0.0;
@@ -43,6 +46,7 @@ class _LoginPageState extends State<LoginPage> {
           padding: const EdgeInsets.symmetric(horizontal: 18),
           // ignore: prefer_const_literals_to_create_immutables
           child: TextField(
+            controller: _usernameController,
             autocorrect: false,
             style: blackTextUtama.copyWith(fontSize: 14, fontWeight: bold),
             decoration: InputDecoration(
@@ -67,6 +71,7 @@ class _LoginPageState extends State<LoginPage> {
           padding: const EdgeInsets.symmetric(horizontal: 18),
           // ignore: prefer_const_literals_to_create_immutables
           child: TextField(
+            controller: _passwordController,
             autocorrect: false,
             obscureText: true,
             style: blackTextUtama.copyWith(fontSize: 14, fontWeight: bold),
